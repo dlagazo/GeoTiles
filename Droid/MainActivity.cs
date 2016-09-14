@@ -37,7 +37,7 @@ namespace GeoTiles.Droid
 
 
 			var metrics = Resources.DisplayMetrics;
-			widthInDp = ConvertPixelsToDp(metrics.WidthPixels)/4;
+			widthInDp = metrics.WidthPixels/4;
 			//heightInDp = ConvertPixelsToDp(metrics.HeightPixels);
 
 			EditText speed = FindViewById<EditText>(Resource.Id.numSpeed);
@@ -105,6 +105,7 @@ namespace GeoTiles.Droid
 
 			}
 			while (rand == prevQuestion);
+			prevQuestion = rand;
 			string question = quadrilaterals[rand].Split('.')[0];
 			answers = quadrilaterals[rand].Split('.')[1].Split(',');
 			TextView clue = FindViewById<TextView>(Resource.Id.txtClue);
@@ -143,6 +144,7 @@ namespace GeoTiles.Droid
 
 					}
 					while (random == prevShape);
+					prevShape = random;
 					//string[] keys = images.Keys.ToString().Split(',');
 					cell.SetImageDrawable(imagesQuadrilaterals[random]);
 					cell.LayoutParameters.Width = widthInDp;

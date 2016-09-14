@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{B5B71178-116A-4C08-9345-BC3DFC1AD0A3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GeoTiles Status">
     <Files>
-      <File FileName="Droid/MainActivity.cs" Line="149" Column="47" />
+      <File FileName="Droid/MainActivity.cs" Line="108" Column="24" />
+      <File FileName="GeoTiles Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
