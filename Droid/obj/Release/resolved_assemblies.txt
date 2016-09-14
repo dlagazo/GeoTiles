@@ -1,0 +1,10 @@
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/GeoTiles.Droid.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/System.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/System.Xml.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/System.Core.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/Mono.Android.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/Java.Interop.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/GeoTiles.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/mscorlib.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/System.Runtime.Serialization.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/android/assets/System.ServiceModel.Internals.dll

@@ -23,7 +23,7 @@ namespace GeoTiles.Droid
 		bool result = false;
 		int correct = 0, incorrect = 0;
 		int prevQuestion = -1, prevShape = -1;
-
+		int widthInDp, heightInDp;
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			
@@ -37,8 +37,8 @@ namespace GeoTiles.Droid
 
 
 			var metrics = Resources.DisplayMetrics;
-			var widthInDp = ConvertPixelsToDp(metrics.WidthPixels);
-			var heightInDp = ConvertPixelsToDp(metrics.HeightPixels);
+			widthInDp = ConvertPixelsToDp(metrics.WidthPixels)/4;
+			//heightInDp = ConvertPixelsToDp(metrics.HeightPixels);
 
 			EditText speed = FindViewById<EditText>(Resource.Id.numSpeed);
 			//speed.Value = 6;
@@ -145,6 +145,8 @@ namespace GeoTiles.Droid
 					while (random == prevShape);
 					//string[] keys = images.Keys.ToString().Split(',');
 					cell.SetImageDrawable(imagesQuadrilaterals[random]);
+					cell.LayoutParameters.Width = widthInDp;
+					cell.LayoutParameters.Height = widthInDp;
 					cell.Click += delegate
 					{
 						bool isFalse = true;
@@ -228,6 +230,7 @@ namespace GeoTiles.Droid
 			quadrilaterals.Add("Four congruent sides and four right angles. square");
 			quadrilaterals.Add("Exactly one pair of parallel sides. trapezoid");
 			quadrilaterals.Add("Two pairs of equal-length sides that are adjacent to each other. square");
+
 			/*items.Add("All sides are different. trapezoid");
 			items.Add("Two sides are equal. square, rectangle");
 			items.Add("All three sides are equal", "Square 1, Square 2");

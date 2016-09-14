@@ -1,0 +1,5 @@
+/Users/admin/Projects/GeoTiles/GeoTiles/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/admin/Projects/GeoTiles/GeoTiles/bin/Debug/GeoTiles.dll.mdb
+/Users/admin/Projects/GeoTiles/GeoTiles/bin/Debug/GeoTiles.dll
+/Users/admin/Projects/GeoTiles/GeoTiles/obj/Debug/GeoTiles.dll
+/Users/admin/Projects/GeoTiles/GeoTiles/obj/Debug/GeoTiles.dll.mdb
