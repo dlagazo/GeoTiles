@@ -52,6 +52,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MenuActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -67,15 +68,55 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\kite1.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite3.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite4.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite5.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite6.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite7.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite8.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kite_template.jpg" />
     <AndroidResource Include="Resources\mipmap-hdpi\parallelogram1.png" />
-    <AndroidResource Include="Resources\mipmap-hdpi\rectangle1.png" />
-    <AndroidResource Include="Resources\mipmap-hdpi\rhombus1.png" />
-    <AndroidResource Include="Resources\mipmap-hdpi\square1.png" />
-    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid1.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\parallelogram2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\parallelogram3.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\parallelogram4.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\parallelogram5.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\parallelogram6.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\parallelogram7.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\parallelogram8.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle1.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\rectangle2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle3.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle4.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle5.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle6.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle7.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rectangle8.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus1.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\rhombus2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus3.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus4.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus5.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus6.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus7.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rhombus8.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square1.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square3.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square4.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square5.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square6.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square7.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\square8.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid1.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\trapezoid2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid3.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid4.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid5.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid6.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid7.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\trapezoid8.png" />
+    <AndroidResource Include="Resources\layout\Menu.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

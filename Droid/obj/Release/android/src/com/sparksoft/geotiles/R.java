@@ -11,8 +11,10 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
+        public static final int btnQuad=0x7f050018;
         public static final int btnStart=0x7f050000;
         public static final int btnStop=0x7f050001;
+        public static final int btnTri=0x7f050017;
         public static final int cells=0x7f050005;
         public static final int editText2=0x7f050002;
         public static final int imageView1=0x7f050006;
@@ -37,19 +39,59 @@ public final class R {
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int menu=0x7f030001;
     }
     public static final class mipmap {
         public static final int icon=0x7f020000;
         public static final int kite1=0x7f020001;
-        public static final int parallelogram1=0x7f020002;
-        public static final int parallelogram2=0x7f020003;
-        public static final int rectangle1=0x7f020004;
-        public static final int rectangle2=0x7f020005;
-        public static final int rhombus1=0x7f020006;
-        public static final int rhombus2=0x7f020007;
-        public static final int square1=0x7f020008;
-        public static final int trapezoid1=0x7f020009;
-        public static final int trapezoid2=0x7f02000a;
+        public static final int kite2=0x7f020002;
+        public static final int kite3=0x7f020003;
+        public static final int kite4=0x7f020004;
+        public static final int kite5=0x7f020005;
+        public static final int kite6=0x7f020006;
+        public static final int kite7=0x7f020007;
+        public static final int kite8=0x7f020008;
+        public static final int kite_template=0x7f020009;
+        public static final int parallelogram1=0x7f02000a;
+        public static final int parallelogram2=0x7f02000b;
+        public static final int parallelogram3=0x7f02000c;
+        public static final int parallelogram4=0x7f02000d;
+        public static final int parallelogram5=0x7f02000e;
+        public static final int parallelogram6=0x7f02000f;
+        public static final int parallelogram7=0x7f020010;
+        public static final int parallelogram8=0x7f020011;
+        public static final int rectangle1=0x7f020012;
+        public static final int rectangle2=0x7f020013;
+        public static final int rectangle3=0x7f020014;
+        public static final int rectangle4=0x7f020015;
+        public static final int rectangle5=0x7f020016;
+        public static final int rectangle6=0x7f020017;
+        public static final int rectangle7=0x7f020018;
+        public static final int rectangle8=0x7f020019;
+        public static final int rhombus1=0x7f02001a;
+        public static final int rhombus2=0x7f02001b;
+        public static final int rhombus3=0x7f02001c;
+        public static final int rhombus4=0x7f02001d;
+        public static final int rhombus5=0x7f02001e;
+        public static final int rhombus6=0x7f02001f;
+        public static final int rhombus7=0x7f020020;
+        public static final int rhombus8=0x7f020021;
+        public static final int square1=0x7f020022;
+        public static final int square2=0x7f020023;
+        public static final int square3=0x7f020024;
+        public static final int square4=0x7f020025;
+        public static final int square5=0x7f020026;
+        public static final int square6=0x7f020027;
+        public static final int square7=0x7f020028;
+        public static final int square8=0x7f020029;
+        public static final int trapezoid1=0x7f02002a;
+        public static final int trapezoid2=0x7f02002b;
+        public static final int trapezoid3=0x7f02002c;
+        public static final int trapezoid4=0x7f02002d;
+        public static final int trapezoid5=0x7f02002e;
+        public static final int trapezoid6=0x7f02002f;
+        public static final int trapezoid7=0x7f020030;
+        public static final int trapezoid8=0x7f020031;
     }
     public static final class string {
         public static final int app_name=0x7f040001;

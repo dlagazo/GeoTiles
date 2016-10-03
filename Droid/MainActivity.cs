@@ -7,7 +7,7 @@ using Android.Graphics.Drawables;
 
 namespace GeoTiles.Droid
 {
-	[Activity(Label = "GeoMatch", MainLauncher = true, Icon = "@mipmap/icon",  ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+	[Activity(Label = "GeoMatch", MainLauncher = false, Icon = "@mipmap/icon",  ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 	public class MainActivity : Activity
 	{
 		//int count = 1;
@@ -127,7 +127,7 @@ namespace GeoTiles.Droid
 			Random random = new Random(System.DateTime.Now.Millisecond);
 			int rand = 0;
 			string question = "";
-			if (order.Count < 6)
+			if (order.Count < 8)
 			{
 				do
 				{
@@ -139,6 +139,7 @@ namespace GeoTiles.Droid
 				prevQuestion = rand;
 				question = quadrilaterals[rand].Split('.')[0];
 				answers = quadrilaterals[rand].Split('.')[1].Split(',');
+
 			}
 			else {
 				if (cheat.Count > 0)
@@ -152,7 +153,21 @@ namespace GeoTiles.Droid
 							break;
 						}
 					}
-					
+
+				}
+				else
+				{
+					do
+					{
+						rand = random.Next() % 6;
+
+
+					}
+					while (rand == prevQuestion);
+					prevQuestion = rand;
+					question = quadrilaterals[rand].Split('.')[0];
+					answers = quadrilaterals[rand].Split('.')[1].Split(',');
+
 				}
 
 
@@ -161,6 +176,11 @@ namespace GeoTiles.Droid
 
 			TextView clue = FindViewById<TextView>(Resource.Id.txtClue);
 			clue.Text = question;
+			Toast.MakeText(ApplicationContext, question, ToastLength.Short).Show();
+			Console.WriteLine(question);
+			Console.WriteLine(answers.ToString());
+
+
 		}
 
 		private void clearCells()
@@ -202,7 +222,7 @@ namespace GeoTiles.Droid
 					int random;
 					do
 					{
-						random = rand.Next() % 10;
+						random = rand.Next() % imagesQuadrilaterals.Count;
 
 					}
 					while (random == prevShape);
@@ -219,7 +239,7 @@ namespace GeoTiles.Droid
 						{
 							if (answer.Contains(shapes[random]))
 							{
-								Toast.MakeText(this.ApplicationContext, "correct", ToastLength.Short).Show();
+								//Toast.MakeText(this.ApplicationContext, "correct", ToastLength.Short).Show();
 								isFalse = false;
 								result = true;
 								correct++;
@@ -259,7 +279,7 @@ namespace GeoTiles.Droid
 
 			foreach (string q in cheat.Values)
 			{
-				Console.WriteLine(q);
+				//Console.WriteLine(q);
 			}
 		}
 
@@ -298,7 +318,7 @@ namespace GeoTiles.Droid
 			quadrilaterals.Add("Four right angles. rectangle, square");
 			quadrilaterals.Add("Four congruent sides and four right angles. square");
 			quadrilaterals.Add("Exactly one pair of parallel sides. trapezoid");
-			quadrilaterals.Add("Two pairs of equal-length sides that are adjacent to each other. square");
+			quadrilaterals.Add("Two pairs of equal-length sides that are adjacent to each other. square, rhombus");
 
 			/*items.Add("All sides are different. trapezoid");
 			items.Add("Two sides are equal. square, rectangle");
@@ -310,40 +330,107 @@ namespace GeoTiles.Droid
 
 			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square1));
 			shapes.Add("square");
-
 			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle1));
-			shapes.Add("rectangle");
-			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle2));
 			shapes.Add("rectangle");
 			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus1));
 			shapes.Add("rhombus");
-			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus2));
-			shapes.Add("rhombus");
-			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square1));
-			shapes.Add("square");
-
 			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid1));
 			shapes.Add("trapezoid");
-
-			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid2));
-			shapes.Add("trapezoid");
-
-
 			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram1));
 			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite1));
+			//shapes.Add("kite");
 
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square2));
+			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle2));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus2));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid2));
+			shapes.Add("trapezoid");
 			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram2));
 			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite2));
+			//shapes.Add("kite");
 
-			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite1));
-			shapes.Add("kite");
-
-			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square1));
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square3));
 			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle3));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus3));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid3));
+			shapes.Add("trapezoid");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram3));
+			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite3));
+			//shapes.Add("kite");
 
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square4));
+			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle4));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus4));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid4));
+			shapes.Add("trapezoid");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram4));
+			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite4));
+			//shapes.Add("kite");
 
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square5));
+			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle5));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus5));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid5));
+			shapes.Add("trapezoid");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram5));
+			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite5));
+			//shapes.Add("kite");
 
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square6));
+			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle6));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus6));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid6));
+			shapes.Add("trapezoid");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram6));
+			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite6));
+			//shapes.Add("kite");
 
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square7));
+			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle7));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus7));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid7));
+			shapes.Add("trapezoid");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram7));
+			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite7));
+			//shapes.Add("kite");
+
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square8));
+			shapes.Add("square");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle8));
+			shapes.Add("rectangle");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus8));
+			shapes.Add("rhombus");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid8));
+			shapes.Add("trapezoid");
+			imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram8));
+			shapes.Add("parallelogram");
+			//imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite8));
+			//shapes.Add("kite");
 		}
 	}
 }

@@ -2,3 +2,7 @@ GeoTiles.Droid.MainActivity, GeoTiles.Droid;md51889867b189273cf69fb92acf6749639.
 GeoTiles.Droid.MainActivity, GeoTiles.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51889867b189273cf69fb92acf6749639.MainActivity
 GeoTiles.Droid.MainActivity;md51889867b189273cf69fb92acf6749639.MainActivity
 geotiles.droid.MainActivity;md51889867b189273cf69fb92acf6749639.MainActivity
+GeoTiles.Droid.MenuActivity, GeoTiles.Droid;md51889867b189273cf69fb92acf6749639.MenuActivity
+GeoTiles.Droid.MenuActivity, GeoTiles.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51889867b189273cf69fb92acf6749639.MenuActivity
+GeoTiles.Droid.MenuActivity;md51889867b189273cf69fb92acf6749639.MenuActivity
+geotiles.droid.MenuActivity;md51889867b189273cf69fb92acf6749639.MenuActivity
