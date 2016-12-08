@@ -160,6 +160,15 @@
     <AndroidResource Include="Resources\mipmap-hdpi\sobtuse2.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\sobtuse3.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\sobtuse4.png" />
+    <AndroidResource Include="Resources\raw\c.mp3" />
+    <AndroidResource Include="Resources\raw\clap.mp3" />
+    <AndroidResource Include="Resources\raw\correct.mp3" />
+    <AndroidResource Include="Resources\raw\over.mp3" />
+    <AndroidResource Include="Resources\raw\wrong.mp3" />
+    <AndroidResource Include="Resources\raw\x.mp3" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon1.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\empty.png" />
+    <AndroidResource Include="Resources\layout\Scores.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
