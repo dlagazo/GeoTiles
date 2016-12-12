@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.sparksoft.geotiles">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="15" />
-  <application android:label="GeoMatch" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon">
-    <activity android:icon="@mipmap/icon" android:label="GeoMatch" android:screenOrientation="portrait" android:name="md51889867b189273cf69fb92acf6749639.MainActivity" />
-    <activity android:icon="@mipmap/icon" android:label="GeoMatch" android:screenOrientation="portrait" android:name="md51889867b189273cf69fb92acf6749639.MenuActivity">
+  <application android:label="GeoMatch" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/i">
+    <activity android:icon="@mipmap/i" android:label="GeoMatch" android:screenOrientation="portrait" android:name="md51889867b189273cf69fb92acf6749639.MainActivity" />
+    <activity android:icon="@mipmap/i" android:label="GeoMatch" android:screenOrientation="portrait" android:name="md51889867b189273cf69fb92acf6749639.MenuActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

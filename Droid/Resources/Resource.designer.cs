@@ -224,22 +224,22 @@ namespace GeoTiles.Droid
 			public const int equi4a = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int iacute1 = 2130837517;
+			public const int i = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int iacute2 = 2130837518;
+			public const int iacute1 = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int iacute3 = 2130837519;
+			public const int iacute2 = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int iacute4 = 2130837520;
+			public const int iacute3 = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int Icon = 2130837521;
+			public const int iacute4 = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int Icon1 = 2130837522;
+			public const int Icon = 2130837522;
 			
 			// aapt resource value: 0x7f020013
 			public const int iso = 2130837523;

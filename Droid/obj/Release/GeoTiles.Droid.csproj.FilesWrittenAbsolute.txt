@@ -116,3 +116,4 @@
 /Users/admin/Projects/GeoTiles/Droid/bin/Release/com.sparksoft.geotiles-Signed.apk
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/uploadflags.txt
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/GeoTiles.Droid.dll
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/res/mipmap-hdpi/i.png

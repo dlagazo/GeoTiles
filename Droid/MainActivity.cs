@@ -7,7 +7,7 @@ using Android.Graphics.Drawables;
 
 namespace GeoTiles.Droid
 {
-	[Activity(Label = "GeoMatch", MainLauncher = false, Icon = "@mipmap/icon",  ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+	[Activity(Label = "GeoMatch", MainLauncher = false, Icon = "@mipmap/i",  ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 	public class MainActivity : Activity
 	{
 		//int count = 1;
@@ -78,6 +78,7 @@ namespace GeoTiles.Droid
 				cell.LayoutParameters.Width = widthInDp;
 				cell.LayoutParameters.Height = widthInDp;
 				cell.SetImageResource(Resource.Mipmap.empty);
+				cell.Enabled = false;
 			}
 			generateQuestion();
 			timer = new System.Timers.Timer();
@@ -230,6 +231,8 @@ namespace GeoTiles.Droid
 					cheat.Add(cellValue, shapes[random]);
 					cell.LayoutParameters.Width = widthInDp;
 					cell.LayoutParameters.Height = widthInDp;
+					cell.Enabled = true;
+					//cell.SetTag(0, true);
 					EventHandler handler = delegate {
 						bool isFalse = true;
 						bool isActive = true;
@@ -246,6 +249,7 @@ namespace GeoTiles.Droid
 								correct++;
 								generateQuestion();
 								cell.SetImageResource(Resource.Mipmap.empty);
+								cell.Enabled = false;
 								ptr--;
 								order.Remove(cellValue);
 								cheat.Remove(cellValue);
@@ -272,6 +276,8 @@ namespace GeoTiles.Droid
 
 				else if(order.Count >= 16){
 					Toast.MakeText(this, "Game over", ToastLength.Short).Show();
+					TextView clue = FindViewById<TextView>(Resource.Id.txtClue);
+					clue.Text = "Game over. Press back to go to main menu.";
 					timer.Stop();
 					over.Start();
 					if (correct > 0)
@@ -334,6 +340,8 @@ namespace GeoTiles.Droid
 							else if (speedValue == 4)
 							{
 								int highScore = Int32.Parse(scores[1]);
+								qHistoryScores[1] = (int.Parse(qHistoryScores[1]) + (correct + incorrect)).ToString();
+
 								if (myScore > highScore || true)
 								{
 									scores[1] = myScore.ToString();
@@ -363,12 +371,13 @@ namespace GeoTiles.Droid
 									Button btnQFast = FindViewById<Button>(Resource.Id.btnQFast);
 									btnQFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + qHistoryScores[2];
 								}
-								qHistoryScores[1] = (int.Parse(qHistoryScores[1]) + (correct + incorrect)).ToString();
 
 							}
 							else if (speedValue == 2)
 							{
 								int highScore = Int32.Parse(scores[2]);
+								qHistoryScores[2] = (int.Parse(qHistoryScores[2]) + (correct + incorrect)).ToString();
+
 								if (myScore > highScore || true)
 								{
 									scores[2] = myScore.ToString();
@@ -398,7 +407,6 @@ namespace GeoTiles.Droid
 									Button btnQFast = FindViewById<Button>(Resource.Id.btnQFast);
 									btnQFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + qHistoryScores[2];
 								}
-								qHistoryScores[2] = (int.Parse(qHistoryScores[2]) + (correct + incorrect)).ToString();
 
 							}
 
@@ -411,8 +419,11 @@ namespace GeoTiles.Droid
 							Button btnShapeType = FindViewById<Button>(Resource.Id.btnShapeType);
 							btnShapeType.Text = "Triangles";
 							String[] scores = prefs.GetString("TScores", "0,0,0").Split(',');
-							double myScore = (correct * 100) / (correct + incorrect);
+							String[] tHistoryScores = prefs.GetString("tHis", "0, 0, 0").Split(',');
 
+							double myScore = (correct * 100) / (correct + incorrect);
+							TextView tvScore = FindViewById<TextView>(Resource.Id.txtScore);
+							tvScore.Text = " Your score is " + myScore + "%";
 							Button btnBack = FindViewById<Button>(Resource.Id.btnScoreBack);
 							btnBack.Click += delegate
 							{
@@ -422,87 +433,93 @@ namespace GeoTiles.Droid
 							if (speedValue == 6)
 							{
 								double highScore = Double.Parse(scores[2]);
+								tHistoryScores[0] = (int.Parse(tHistoryScores[0]) + (correct + incorrect)).ToString();
+
 								if (myScore > highScore)
 								{
 									scores[0] = myScore.ToString();
 
 									Button btnTSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%";
+									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + tHistoryScores[0];
 									btnTSlow.SetBackgroundColor(Android.Graphics.Color.DarkGreen);
 
 
 									Button btnTNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%";
+									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + tHistoryScores[1];
 
 									Button btnTFast = FindViewById<Button>(Resource.Id.btnQFast);
-									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%";
+									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + tHistoryScores[2];
 
 									clap.Start();
 								}
 								else
 								{
 									Button btnTSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%";
+									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" +  " | " +tHistoryScores[0];
 
 
 									Button btnTNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%";
+									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + tHistoryScores[1];
 
 									Button btnTFast = FindViewById<Button>(Resource.Id.btnQFast);
-									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%";
+									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + tHistoryScores[2];
 								}
 							}
 							else if (speedValue == 4)
 							{
 								double highScore = Double.Parse(scores[2]);
+								tHistoryScores[1] = (int.Parse(tHistoryScores[1]) + (correct + incorrect)).ToString();
+
 								if (myScore > highScore)
 								{
 									scores[1] = myScore.ToString();
 
 									Button btnTSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%";
+									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + tHistoryScores[0];
 
 
 									Button btnTNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%";
+									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + tHistoryScores[1];
 									btnTNormal.SetBackgroundColor(Android.Graphics.Color.DarkGreen);
 
 
 									Button btnTFast = FindViewById<Button>(Resource.Id.btnQFast);
-									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%";
+									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + tHistoryScores[2];
 
 									clap.Start();
 								}
 								else
 								{
 									Button btnTSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%";
+									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + tHistoryScores[0];
 
 
 									Button btnTNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%";
+									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + tHistoryScores[1];
 
 									Button btnTFast = FindViewById<Button>(Resource.Id.btnQFast);
-									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%";
+									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + tHistoryScores[2];
 								}
 							}
 							else if (speedValue == 2)
 							{
+								tHistoryScores[2] = (int.Parse(tHistoryScores[2]) + (correct + incorrect)).ToString();
+
 								double highScore = Double.Parse(scores[2]);
 								if (myScore > highScore)
 								{
 									scores[2] = myScore.ToString();
 
 									Button btnTSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%";
+									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + tHistoryScores[0];
 
 
 									Button btnTNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%";
+									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + tHistoryScores[1];
 
 
 									Button btnTFast = FindViewById<Button>(Resource.Id.btnQFast);
-									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%";
+									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + tHistoryScores[2];
 									btnTFast.SetBackgroundColor(Android.Graphics.Color.DarkGreen);
 
 									clap.Start();
@@ -510,19 +527,19 @@ namespace GeoTiles.Droid
 								else
 								{
 									Button btnTSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%";
+									btnTSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + tHistoryScores[0];
 
 
 									Button btnTNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%";
+									btnTNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + tHistoryScores[1];
 
 									Button btnTFast = FindViewById<Button>(Resource.Id.btnQFast);
-									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%";
+									btnTFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + tHistoryScores[2];
 								}
 							}
-							String[] qscores = prefs.GetString("QScores", "0,0,0").Split(',');
 
 
+							prefs.Edit().PutString("tHis", tHistoryScores[0] + "," + tHistoryScores[1] + "," + tHistoryScores[2]).Commit();
 
 
 							prefs.Edit().PutString("TScores", scores[0] + "," + scores[1] + "," + scores[2]).Commit();
@@ -706,7 +723,7 @@ namespace GeoTiles.Droid
 
 				quadrilaterals.Add("Scalene.s-acute, s-obtuse, r-scalene, acute");
 				quadrilaterals.Add("Isosceles.i-acute, iso, o-iso, r-iso");
-				quadrilaterals.Add("Equilateral.equi");
+				quadrilaterals.Add("Equilateral.equi, s-obtuse");
 				quadrilaterals.Add("Right.r-iso, r-scalene");
 				quadrilaterals.Add("Acute.s-acute, i-acute, iso, equi, acute");
 				quadrilaterals.Add("Obtuse.s-obtuse, o-iso");

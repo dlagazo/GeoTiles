@@ -166,7 +166,7 @@
     <AndroidResource Include="Resources\raw\over.mp3" />
     <AndroidResource Include="Resources\raw\wrong.mp3" />
     <AndroidResource Include="Resources\raw\x.mp3" />
-    <AndroidResource Include="Resources\mipmap-hdpi\Icon1.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\i.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\empty.png" />
     <AndroidResource Include="Resources\layout\Scores.axml" />
   </ItemGroup>
