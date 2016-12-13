@@ -612,108 +612,108 @@ namespace GeoTiles.Droid
 				items.Add("One angle is right", "Square 1, Square 2");
 				items.Add("All angles are equal", "Square 1, Square 2");*/
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square1));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle1));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus1));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid1));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram1));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite1));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square2));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle2));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus2));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid2));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram2));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite2));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square3));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle3));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus3));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid3));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram3));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite3));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square4));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle4));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus4));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid4));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram4));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite4));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square5));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square5));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle5));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle5));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus5));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus5));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid5));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid5));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram5));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram5));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite5));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite5));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square6));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square6));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle6));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle6));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus6));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus6));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid6));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid6));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram6));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram6));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite6));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite6));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square7));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square7));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle7));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle7));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus7));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus7));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid7));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid7));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram7));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram7));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite7));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite7));
 				shapes.Add("kite");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.square8));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.square8));
 				shapes.Add("square");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rectangle8));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rectangle8));
 				shapes.Add("rectangle");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rhombus8));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rhombus8));
 				shapes.Add("rhombus");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.trapezoid8));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.trapezoid8));
 				shapes.Add("trapezoid");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.parallelogram8));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.parallelogram8));
 				shapes.Add("parallelogram");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.kite8));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.kite8));
 				shapes.Add("kite");
 			}
 
@@ -743,102 +743,102 @@ namespace GeoTiles.Droid
 				//N
 				quadrilaterals.Add("All angles are equal.equi");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sacute1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sacute1));
 				shapes.Add("s-acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sacute2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sacute2));
 				shapes.Add("s-acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sacute3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sacute3));
 				shapes.Add("s-acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sacute4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sacute4));
 				shapes.Add("s-acute");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sobtuse1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sobtuse1));
 				shapes.Add("s-obtuse");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sobtuse2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sobtuse2));
 				shapes.Add("s-obtuse");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sobtuse3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sobtuse3));
 				shapes.Add("s-obtuse");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.sobtuse4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.sobtuse4));
 				shapes.Add("s-obtuse");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iacute1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iacute1));
 				shapes.Add("i-acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iacute2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iacute2));
 				shapes.Add("i-acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iacute3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iacute3));
 				shapes.Add("i-acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iacute4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iacute4));
 				shapes.Add("i-acute");
 
 
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iso1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iso1));
 				shapes.Add("iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iso2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iso2));
 				shapes.Add("iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iso3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iso3));
 				shapes.Add("iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.iso4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.iso4));
 				shapes.Add("iso");
 
 				
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi1));
 				shapes.Add("equi");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi2));
 				shapes.Add("equi");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi3));
 				shapes.Add("equi");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi4));
-				shapes.Add("equi");
-
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi1a));
-				shapes.Add("equi");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi2a));
-				shapes.Add("equi");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi3a));
-				shapes.Add("equi");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.equi4a));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi4));
 				shapes.Add("equi");
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.oiso1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi1a));
+				shapes.Add("equi");
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi2a));
+				shapes.Add("equi");
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi3a));
+				shapes.Add("equi");
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.equi4a));
+				shapes.Add("equi");
+
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.oiso1));
 				shapes.Add("o-iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.oiso2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.oiso2));
 				shapes.Add("o-iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.oiso3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.oiso3));
 				shapes.Add("o-iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.oiso4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.oiso4));
 				shapes.Add("o-iso");
 
 
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.riso1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.riso1));
 				shapes.Add("r-iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.riso2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.riso2));
 				shapes.Add("r-iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.riso3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.riso3));
 				shapes.Add("r-iso");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.riso4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.riso4));
 				shapes.Add("r-iso");
 
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rscalene1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rscalene1));
 				shapes.Add("r-scalene");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rscalene2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rscalene2));
 				shapes.Add("r-scalene");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rscalene3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rscalene3));
 				shapes.Add("r-scalene");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.rscalene4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.rscalene4));
 				shapes.Add("r-scalene");
 
 
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.acute1));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.acute1));
 				shapes.Add("acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.acute2));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.acute2));
 				shapes.Add("acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.acute3));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.acute3));
 				shapes.Add("acute");
-				imagesQuadrilaterals.Add(GetDrawable(Resource.Mipmap.acute4));
+				imagesQuadrilaterals.Add(Resources.GetDrawable(Resource.Mipmap.acute4));
 				shapes.Add("acute");
 
 
