@@ -202,32 +202,32 @@ namespace GeoTiles.Droid
 					int highScore = Int32.Parse(scores[0]);
 					qHistoryScores[0] = (int.Parse(qHistoryScores[0]) + (correct + incorrect)).ToString();
 
-					if (correct > highScore || true)
+					if (correct > highScore)
 					{
 						scores[0] = correct.ToString();
 
 						Button btnQSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-						btnQSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + qHistoryScores[0];
+						btnQSlow.Text = "    Slow:" + Int32.Parse(scores[0]);
 						btnQSlow.SetBackgroundColor(Android.Graphics.Color.DarkGreen);
 
 						Button btnQNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-						btnQNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + qHistoryScores[1];
+						btnQNormal.Text = "    Normal:" + Int32.Parse(scores[1]) ;
 
 						Button btnQFast = FindViewById<Button>(Resource.Id.btnQFast);
-						btnQFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + qHistoryScores[2];
+						btnQFast.Text = "    Fast:" + Int32.Parse(scores[2]);
 						clap.Start();
 					}
 					else
 					{
 						Button btnQSlow = FindViewById<Button>(Resource.Id.btnQSlow);
-						btnQSlow.Text = "    Slow:" + Int32.Parse(scores[0]) + "%" + " | " + qHistoryScores[0];
+						btnQSlow.Text = "    Slow:" + Int32.Parse(scores[0]) ;
 
 
 						Button btnQNormal = FindViewById<Button>(Resource.Id.btnQNormal);
-						btnQNormal.Text = "    Normal:" + Int32.Parse(scores[1]) + "%" + " | " + qHistoryScores[1];
+						btnQNormal.Text = "    Normal:" + Int32.Parse(scores[1]) ;
 
 						Button btnQFast = FindViewById<Button>(Resource.Id.btnQFast);
-						btnQFast.Text = "    Fast:" + Int32.Parse(scores[2]) + "%" + " | " + qHistoryScores[2];
+						btnQFast.Text = "    Fast:" + Int32.Parse(scores[2]) ;
 					}
 
 
@@ -312,7 +312,7 @@ namespace GeoTiles.Droid
 			else if (type.Equals("0"))
 			{
 				Button btnShapeType = FindViewById<Button>(Resource.Id.btnShapeType);
-				btnShapeType.Text = "Triangles";
+				btnShapeType.Text = " Triangles";
 				String[] scores = prefs.GetString("TScores", "0,0,0").Split(',');
 				String[] tHistoryScores = prefs.GetString("tHis", "0, 0, 0").Split(',');
 
@@ -326,7 +326,7 @@ namespace GeoTiles.Droid
 
 				if (speedValue == 6)
 				{
-					double highScore = Double.Parse(scores[2]);
+					double highScore = Double.Parse(scores[0]);
 					tHistoryScores[0] = (int.Parse(tHistoryScores[0]) + (correct + incorrect)).ToString();
 
 					if (correct > highScore)
@@ -361,7 +361,7 @@ namespace GeoTiles.Droid
 				}
 				else if (speedValue == 4)
 				{
-					double highScore = Double.Parse(scores[2]);
+					double highScore = Double.Parse(scores[1]);
 					tHistoryScores[1] = (int.Parse(tHistoryScores[1]) + (correct + incorrect)).ToString();
 
 					if (correct > highScore)
