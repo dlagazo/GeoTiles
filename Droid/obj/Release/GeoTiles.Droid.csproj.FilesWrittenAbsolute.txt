@@ -1,5 +1,4 @@
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/MonoAndroid,Version=v6.0.AssemblyAttribute.cs
-/Users/admin/Projects/GeoTiles/Droid/bin/Release/GeoTiles.dll
 /Users/admin/Projects/GeoTiles/Droid/bin/Release/GeoTiles.Droid.dll
 /Users/admin/Projects/GeoTiles/Droid/bin/Release/com.sparksoft.geotiles.apk
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/android/bin/com.sparksoft.geotiles.apk
@@ -109,11 +108,11 @@
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/res/raw/over.mp3
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/res/raw/wrong.mp3
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/res/raw/x.mp3
-/Users/admin/Projects/GeoTiles/Droid/obj/Release/res/mipmap-hdpi/icon1.png
+/Users/admin/Projects/GeoTiles/Droid/obj/Release/res/mipmap-hdpi/i.png
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/res/mipmap-hdpi/empty.png
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/res/layout/scores.xml
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/R.cs.flag
 /Users/admin/Projects/GeoTiles/Droid/bin/Release/com.sparksoft.geotiles-Signed.apk
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/uploadflags.txt
 /Users/admin/Projects/GeoTiles/Droid/obj/Release/GeoTiles.Droid.dll
-/Users/admin/Projects/GeoTiles/Droid/obj/Release/res/mipmap-hdpi/i.png
+/Users/admin/Projects/GeoTiles/Droid/bin/Release/GeoTiles.dll

@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{B5B71178-116A-4C08-9345-BC3DFC1AD0A3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GeoTiles Status">
     <Files>
-      <File FileName="Droid/MainActivity.cs" Line="210" Column="23" />
+      <File FileName="Droid/MainActivity.cs" Line="658" Column="104" />
       <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="3" />
       <File FileName="Droid/MenuActivity.cs" Line="16" Column="70" />
+      <File FileName="GeoTiles Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.GeoTiles.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.G5AZCY07D5096BN" />
+  <MonoDevelop.Ide.ItemProperties.GeoTiles.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.GeoTiles.iOS PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

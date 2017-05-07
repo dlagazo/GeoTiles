@@ -237,7 +237,7 @@ namespace GeoTiles.Droid
 					int highScore = Int32.Parse(scores[1]);
 					qHistoryScores[1] = (int.Parse(qHistoryScores[1]) + (correct + incorrect)).ToString();
 
-					if (correct > highScore || true)
+					if (correct > highScore)
 					{
 						scores[1] = correct.ToString();
 
@@ -273,7 +273,7 @@ namespace GeoTiles.Droid
 					int highScore = Int32.Parse(scores[2]);
 					qHistoryScores[2] = (int.Parse(qHistoryScores[2]) + (correct + incorrect)).ToString();
 
-					if (correct > highScore || true)
+					if (correct > highScore)
 					{
 						scores[2] = correct.ToString();
 
@@ -521,7 +521,30 @@ namespace GeoTiles.Droid
 								order.Remove(cellValue);
 								cheat.Remove(cellValue);
 								//order.Add(order[ptr]);
+								if (correct == 100)
+								{
+									AlertDialog.Builder alert = new AlertDialog.Builder(this);
+									alert.SetTitle("Congratulations! ");
+									alert.SetMessage("You have reached 100pts.");
+									timer.Stop();
+									over.Start();
+									alert.SetPositiveButton("High Scores", (senderAlert, args) =>
+									{
+										if (correct == 100)
+										{
+											gameOver();
+										}
 
+									});
+
+									alert.SetNegativeButton("Back", (senderAlert, args) =>
+									{
+										Finish();
+									});
+
+									Dialog dialog = alert.Create();
+									dialog.Show();
+								}
 								break;
 							}
 						}
@@ -531,6 +554,8 @@ namespace GeoTiles.Droid
 							wrong.Start();
 							result = false;
 							incorrect++;
+
+
 							if (incorrect == 3)
 							{
 								//set alert for executing the task
@@ -630,7 +655,7 @@ namespace GeoTiles.Droid
 				quadrilaterals.Add("Opposite angles are supplementary.rectangle, square");
 				quadrilaterals.Add("Consecutive angles are congruent.square, rectangle");
 				quadrilaterals.Add("Consecutive angles are supplementary.parallelogram, rhombus, square, rectangle");
-				quadrilaterals.Add("Not more than two sides are congruent.trapezoid, parallelogram, rectangle");
+				quadrilaterals.Add("Not more than two sides are congruent.trapezoid, parallelogram, rectangle, kite");
 				quadrilaterals.Add("Only one diagonal bisects the other diagonal.kite");
 
 
