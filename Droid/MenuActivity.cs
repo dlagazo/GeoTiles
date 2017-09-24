@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace GeoTiles.Droid
 {
-	[Activity(Label = "GeoMatch", MainLauncher = true, Icon = "@mipmap/i", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+	[Activity(Label = "GeoMatch", Icon = "@mipmap/i", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 	public class MenuActivity : Activity
 	{
 		Intent activity;

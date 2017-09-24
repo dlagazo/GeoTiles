@@ -1,0 +1,5 @@
+C:\Users\Paolo\Documents\GitHub\GeoTiles\GeoTiles\bin\Debug\GeoTiles.dll
+C:\Users\Paolo\Documents\GitHub\GeoTiles\GeoTiles\bin\Debug\GeoTiles.pdb
+C:\Users\Paolo\Documents\GitHub\GeoTiles\GeoTiles\obj\Debug\GeoTiles.csproj.CoreCompileInputs.cache
+C:\Users\Paolo\Documents\GitHub\GeoTiles\GeoTiles\obj\Debug\GeoTiles.dll
+C:\Users\Paolo\Documents\GitHub\GeoTiles\GeoTiles\obj\Debug\GeoTiles.pdb

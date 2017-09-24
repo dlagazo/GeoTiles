@@ -1,0 +1,12 @@
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\bin\iPhoneSimulator\Debug\GeoTiles.iOS.exe
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\bin\iPhoneSimulator\Debug\GeoTiles.iOS.pdb
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\bin\iPhoneSimulator\Debug\GeoTiles.dll
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\bin\iPhoneSimulator\Debug\GeoTiles.pdb
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\GeoTiles.iOS.csprojResolveAssemblyReference.cache
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\GeoTiles.iOS.csproj.CoreCompileInputs.cache
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\GeoTiles.iOS.exe
+C:\Users\Paolo\Documents\GitHub\GeoTiles\iOS\obj\iPhoneSimulator\Debug\GeoTiles.iOS.pdb
